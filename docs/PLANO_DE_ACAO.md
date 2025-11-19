@@ -22,9 +22,9 @@
 ### 👤 Pessoa 2: Implementações e Análise
 
 **Responsabilidades:**
-- [ ] Implementar **Programação Dinâmica** (Dynamic Programming)
-- [ ] Implementar **Algoritmos Gulosos** (Greedy Algorithms)
-- [ ] Implementar **Algoritmos Aproximados ou Heurísticas**
+- [x] Implementar **Programação Dinâmica** (Dynamic Programming)
+- [x] Implementar **Algoritmos Gulosos** (Greedy Algorithms)
+- [x] Implementar **Algoritmos Aproximados ou Heurísticas**
 - [ ] Realizar **contagem de instruções** para análise de complexidade (de TODOS os algoritmos: P1 + P2)
 - [ ] Realizar **medição de tempo de execução** para análise de desempenho (de TODOS os algoritmos: P1 + P2)
 - [ ] Coletar dados de performance para comparação entre todas as estratégias

@@ -24,12 +24,12 @@ Dada uma string `s` de comprimento `n`, encontrar a substring `s[i:j]` tal que:
 
 Este projeto implementa e compara as seguintes estratégias algorítmicas:
 
-- ✅ **Força Bruta** (Brute Force) - Implementado
-- ✅ **Backtracking** - Implementado
-- ✅ **Divisão e Conquista** (Divide and Conquer) - Implementado
-- ⏳ **Programação Dinâmica** (Dynamic Programming) - Em desenvolvimento
-- ⏳ **Algoritmos Gulosos** (Greedy Algorithms) - Em desenvolvimento
-- ⏳ **Algoritmos Aproximados ou Heurísticas** - Em desenvolvimento
+- ✅ **Força Bruta** (Brute Force)
+- ✅ **Backtracking**
+- ✅ **Divisão e Conquista** (Divide and Conquer)
+- ✅ **Programação Dinâmica** (Dynamic Programming)
+- ✅ **Algoritmos Gulosos** (Greedy Algorithms)
+- ✅ **Algoritmos Aproximados ou Heurísticas**
 
 ## 📁 Estrutura do Projeto
 
@@ -50,23 +50,31 @@ Este projeto implementa e compara as seguintes estratégias algorítmicas:
 │   │   └── brute_force.py
 │   ├── backtracking/        # ✅ Implementado
 │   ├── divide_and_conquer/  # ✅ Implementado
-│   ├── dynamic_programming/ # ⏳ Em desenvolvimento
-│   ├── greedy/              # ⏳ Em desenvolvimento
-│   ├── heuristics/          # ⏳ Em desenvolvimento
+│   ├── dynamic_programming/ # ✅ Implementado
+│   ├── greedy/              # ✅ Implementado
+│   ├── heuristics/          # ✅ Implementado
 │   └── utils/               # Funções auxiliares
 │       ├── __init__.py
 │       └── helpers.py
 ├── tests/                   # Testes unitários
 │   ├── __init__.py
 │   ├── conftest.py          # Configuração do pytest (melhora exibição)
-│   └── test_brute_force.py   # Testes do algoritmo de Força Bruta
+│   ├── test_brute_force.py
+│   ├── test_backtracking.py
+│   ├── test_divide_and_conquer.py
+│   ├── test_dynamic_programming.py
+│   ├── test_greedy.py
+│   └── test_heuristics.py
 ├── docs/                    # Documentação do trabalho
 │   ├── REQUISITOS.md        # Requisitos do trabalho final
 │   ├── PLANO_DE_ACAO.md     # Plano de ação e divisão de tarefas
 │   ├── implementations/     # Documentação das implementações
 │   │   ├── BRUTE_FORCE.md
 │   │   ├── BACKTRACKING.md
-│   │   └── DIVIDE_AND_CONQUER.md
+│   │   ├── DIVIDE_AND_CONQUER.md
+│   │   ├── DYNAMIC_PROGRAMMING.md
+│   │   ├── GREEDY.md
+│   │   └── HEURISTICS.md
 │   └── documentacao.pdf     # Documentação final em PDF (a ser criado)
 └── results/                 # Resultados de performance e análises
 ```
@@ -113,9 +121,9 @@ Para instruções específicas de cada algoritmo implementado, consulte:
 - **Força Bruta:** [docs/implementations/BRUTE_FORCE.md](./docs/implementations/BRUTE_FORCE.md)
 - **Backtracking:** [docs/implementations/BACKTRACKING.md](./docs/implementations/BACKTRACKING.md)
 - **Divisão e Conquista:** [docs/implementations/DIVIDE_AND_CONQUER.md](./docs/implementations/DIVIDE_AND_CONQUER.md)
-- **Programação Dinâmica:** (em desenvolvimento)
-- **Algoritmos Gulosos:** (em desenvolvimento)
-- **Heurísticas:** (em desenvolvimento)
+- **Programação Dinâmica:** [docs/implementations/DYNAMIC_PROGRAMMING.md](./docs/implementations/DYNAMIC_PROGRAMMING.md)
+- **Algoritmos Gulosos:** [docs/implementations/GREEDY.md](./docs/implementations/GREEDY.md)
+- **Heurísticas:** [docs/implementations/HEURISTICS.md](./docs/implementations/HEURISTICS.md)
 
 ### Exemplo de Uso
 
@@ -123,11 +131,17 @@ Para instruções específicas de cada algoritmo implementado, consulte:
 from src.brute_force import BruteForceAlgorithm
 from src.backtracking import BacktrackingAlgorithm
 from src.divide_and_conquer import DivideAndConquerAlgorithm
+from src.dynamic_programming import DynamicProgrammingAlgorithm
+from src.greedy import GreedyAlgorithm
+from src.heuristics import HeuristicAlgorithm
 
 algorithms = [
     BruteForceAlgorithm(count_instructions=True),
     BacktrackingAlgorithm(count_instructions=True),
     DivideAndConquerAlgorithm(count_instructions=True),
+    DynamicProgrammingAlgorithm(count_instructions=True),
+    GreedyAlgorithm(count_instructions=True),
+    HeuristicAlgorithm(count_instructions=True),
 ]
 
 for algorithm in algorithms:
@@ -168,6 +182,9 @@ Para mais exemplos e detalhes, consulte a documentação específica de cada imp
 - **Documentação da implementação Força Bruta:** [docs/implementations/BRUTE_FORCE.md](./docs/implementations/BRUTE_FORCE.md)
 - **Documentação da implementação Backtracking:** [docs/implementations/BACKTRACKING.md](./docs/implementations/BACKTRACKING.md)
 - **Documentação da implementação Divisão e Conquista:** [docs/implementations/DIVIDE_AND_CONQUER.md](./docs/implementations/DIVIDE_AND_CONQUER.md)
+- **Documentação da implementação Programação Dinâmica:** [docs/implementations/DYNAMIC_PROGRAMMING.md](./docs/implementations/DYNAMIC_PROGRAMMING.md)
+- **Documentação da implementação Algoritmo Guloso:** [docs/implementations/GREEDY.md](./docs/implementations/GREEDY.md)
+- **Documentação da implementação Heurísticas:** [docs/implementations/HEURISTICS.md](./docs/implementations/HEURISTICS.md)
 
 ## ❓ Solução de Problemas
 

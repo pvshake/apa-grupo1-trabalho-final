@@ -10,10 +10,12 @@ import sys
 from typing import Iterable
 
 from src.base.algorithm import Algorithm
-
 from src.backtracking import BacktrackingAlgorithm
 from src.brute_force import BruteForceAlgorithm
 from src.divide_and_conquer import DivideAndConquerAlgorithm
+from src.dynamic_programming import DynamicProgrammingAlgorithm
+from src.greedy import GreedyAlgorithm
+from src.heuristics import HeuristicAlgorithm
 from src.utils import generate_test_cases
 
 
@@ -61,6 +63,9 @@ def main():
         BruteForceAlgorithm(count_instructions=True),
         BacktrackingAlgorithm(count_instructions=True),
         DivideAndConquerAlgorithm(count_instructions=True),
+        DynamicProgrammingAlgorithm(count_instructions=True),
+        GreedyAlgorithm(count_instructions=True),
+        HeuristicAlgorithm(count_instructions=True),
     ]
     test_cases = generate_test_cases()
 
