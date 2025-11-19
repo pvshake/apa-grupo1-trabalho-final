@@ -6,12 +6,12 @@
 ### 👤 Pessoa 1: Implementações e Código
 
 **Responsabilidades:**
-- [ ] Implementar **Força Bruta** (Brute Force)
-- [ ] Implementar **Backtracking**
-- [ ] Implementar **Divisão e Conquista** (Divide and Conquer)
-- [ ] Garantir que os códigos estejam bem identados e comentados
-- [ ] Preparar os códigos para inserção na documentação
-- [ ] Testar as implementações básicas
+- [x] Implementar **Força Bruta** (Brute Force)
+- [x] Implementar **Backtracking**
+- [x] Implementar **Divisão e Conquista** (Divide and Conquer)
+- [x] Garantir que os códigos estejam bem identados e comentados
+- [x] Preparar os códigos para inserção na documentação
+- [x] Testar as implementações básicas
 
 **Entregáveis:**
 - Códigos-fonte funcionais das 3 estratégias acima

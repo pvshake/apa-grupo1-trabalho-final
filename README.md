@@ -25,8 +25,8 @@ Dada uma string `s` de comprimento `n`, encontrar a substring `s[i:j]` tal que:
 Este projeto implementa e compara as seguintes estratégias algorítmicas:
 
 - ✅ **Força Bruta** (Brute Force) - Implementado
-- ⏳ **Backtracking** - Em desenvolvimento
-- ⏳ **Divisão e Conquista** (Divide and Conquer) - Em desenvolvimento
+- ✅ **Backtracking** - Implementado
+- ✅ **Divisão e Conquista** (Divide and Conquer) - Implementado
 - ⏳ **Programação Dinâmica** (Dynamic Programming) - Em desenvolvimento
 - ⏳ **Algoritmos Gulosos** (Greedy Algorithms) - Em desenvolvimento
 - ⏳ **Algoritmos Aproximados ou Heurísticas** - Em desenvolvimento
@@ -48,8 +48,8 @@ Este projeto implementa e compara as seguintes estratégias algorítmicas:
 │   ├── brute_force/         # ✅ Implementado
 │   │   ├── __init__.py
 │   │   └── brute_force.py
-│   ├── backtracking/        # ⏳ Em desenvolvimento
-│   ├── divide_and_conquer/  # ⏳ Em desenvolvimento
+│   ├── backtracking/        # ✅ Implementado
+│   ├── divide_and_conquer/  # ✅ Implementado
 │   ├── dynamic_programming/ # ⏳ Em desenvolvimento
 │   ├── greedy/              # ⏳ Em desenvolvimento
 │   ├── heuristics/          # ⏳ Em desenvolvimento
@@ -64,7 +64,9 @@ Este projeto implementa e compara as seguintes estratégias algorítmicas:
 │   ├── REQUISITOS.md        # Requisitos do trabalho final
 │   ├── PLANO_DE_ACAO.md     # Plano de ação e divisão de tarefas
 │   ├── implementations/     # Documentação das implementações
-│   │   └── BRUTE_FORCE.md   # Documentação detalhada da Força Bruta
+│   │   ├── BRUTE_FORCE.md
+│   │   ├── BACKTRACKING.md
+│   │   └── DIVIDE_AND_CONQUER.md
 │   └── documentacao.pdf     # Documentação final em PDF (a ser criado)
 └── results/                 # Resultados de performance e análises
 ```
@@ -109,8 +111,8 @@ python3 main.py
 
 Para instruções específicas de cada algoritmo implementado, consulte:
 - **Força Bruta:** [docs/implementations/BRUTE_FORCE.md](./docs/implementations/BRUTE_FORCE.md)
-- **Backtracking:** (em desenvolvimento)
-- **Divisão e Conquista:** (em desenvolvimento)
+- **Backtracking:** [docs/implementations/BACKTRACKING.md](./docs/implementations/BACKTRACKING.md)
+- **Divisão e Conquista:** [docs/implementations/DIVIDE_AND_CONQUER.md](./docs/implementations/DIVIDE_AND_CONQUER.md)
 - **Programação Dinâmica:** (em desenvolvimento)
 - **Algoritmos Gulosos:** (em desenvolvimento)
 - **Heurísticas:** (em desenvolvimento)
@@ -119,17 +121,20 @@ Para instruções específicas de cada algoritmo implementado, consulte:
 
 ```python
 from src.brute_force import BruteForceAlgorithm
+from src.backtracking import BacktrackingAlgorithm
+from src.divide_and_conquer import DivideAndConquerAlgorithm
 
-# Cria instância do algoritmo
-algorithm = BruteForceAlgorithm(count_instructions=True)
+algorithms = [
+    BruteForceAlgorithm(count_instructions=True),
+    BacktrackingAlgorithm(count_instructions=True),
+    DivideAndConquerAlgorithm(count_instructions=True),
+]
 
-# Resolve o problema
-result = algorithm.solve("abcabcbb")
-
-print(f"Substring: {result.substring}")
-print(f"Comprimento: {result.length}")
-print(f"Tempo: {result.execution_time:.6f}s")
-print(f"Instruções: {result.instruction_count}")
+for algorithm in algorithms:
+    result = algorithm.solve("abcabcbb")
+    print(f"{algorithm.name} → Substring: {result.substring} | "
+          f"Comprimento: {result.length} | Tempo: {result.execution_time:.6f}s | "
+          f"Instruções: {result.instruction_count}")
 ```
 
 Para mais exemplos e detalhes, consulte a documentação específica de cada implementação em `docs/implementations/`.
@@ -161,6 +166,8 @@ Para mais exemplos e detalhes, consulte a documentação específica de cada imp
 - **Requisitos do trabalho:** [docs/REQUISITOS.md](./docs/REQUISITOS.md)
 - **Plano de ação:** [docs/PLANO_DE_ACAO.md](./docs/PLANO_DE_ACAO.md)
 - **Documentação da implementação Força Bruta:** [docs/implementations/BRUTE_FORCE.md](./docs/implementations/BRUTE_FORCE.md)
+- **Documentação da implementação Backtracking:** [docs/implementations/BACKTRACKING.md](./docs/implementations/BACKTRACKING.md)
+- **Documentação da implementação Divisão e Conquista:** [docs/implementations/DIVIDE_AND_CONQUER.md](./docs/implementations/DIVIDE_AND_CONQUER.md)
 
 ## ❓ Solução de Problemas
 
