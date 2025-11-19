@@ -1,92 +1,72 @@
-# Trabalho Final de APA - Implementação e Análise de Estratégias de Algoritmos para Solução de Problema NP
+# Trabalho Final de APA - String de Comprimento Máximo
 
-## Tema do Grupo
-**PROBLEMA: STRING DE COMPRIMENTO MÁXIMO**
+## 📋 Sobre o Projeto
 
-## Nota Máxima
-**10,0 (dez vírgula zero) pontos**
+Este repositório contém a implementação e análise de diferentes estratégias algorítmicas para resolver o problema **String de Comprimento Máximo**, desenvolvido como trabalho final da disciplina de Análise e Projeto de Algoritmos (APA).
 
-## Datas e Prazos Importantes
+## 🎯 Problema: String de Comprimento Máximo
 
-- **Data de entrega do trabalho escrito:** 22/11/2025
-- **Datas da apresentação oral:** 24/11 e 1/12/2025
-- **Tempo da apresentação oral:** 23 minutos
+[Descrição detalhada do problema será adicionada aqui]
 
-## Descrição do Trabalho
+## 🛠️ Estratégias Implementadas
 
-O trabalho prático consiste em implementar e analisar (complexidade temporal e desempenho) algoritmos baseados em diferentes paradigmas de projeto e análise de algoritmos. Para análise de complexidade, é necessário contagem de instruções; para análise de desempenho, é necessário medição de tempo de execução.
+Este projeto implementa e compara as seguintes estratégias algorítmicas:
 
-A documentação deve comprovar que o problema escolhido/selecionado pertence à classe NP [1, 2].
+- ✅ **Força Bruta** (Brute Force)
+- ✅ **Backtracking**
+- ✅ **Divisão e Conquista** (Divide and Conquer)
+- ✅ **Programação Dinâmica** (Dynamic Programming)
+- ✅ **Algoritmos Gulosos** (Greedy Algorithms)
+- ✅ **Algoritmos Aproximados ou Heurísticas** (Approximate Algorithms or Heuristics)
 
-A solução do problema deve considerar/implementar diferentes estratégias:
+## 📁 Estrutura do Projeto
 
-- **Força Bruta** (Brute Force)
-- **Backtracking**
-- **Divisão e Conquista** (Divide and Conquer)
-- **Programação Dinâmica** (Dynamic Programming)
-- **Algoritmos Gulosos** (Greedy Algorithms)
-- **Algoritmos Aproximados ou Heurísticas** (Approximate Algorithms or Heuristics)
+```
+.
+├── README.md                 # Este arquivo
+├── REQUISITOS.md            # Requisitos do trabalho final
+├── PLANO_DE_ACAO.md         # Plano de ação e divisão de tarefas
+├── src/                     # Códigos-fonte das implementações
+│   ├── brute_force/
+│   ├── backtracking/
+│   ├── divide_and_conquer/
+│   ├── dynamic_programming/
+│   ├── greedy/
+│   └── heuristics/
+├── docs/                    # Documentação do trabalho
+│   └── documentacao.pdf     # Documentação final em PDF
+├── tests/                   # Testes e casos de uso
+└── results/                 # Resultados de performance e análises
+```
 
-Em caso de impossibilidade técnica de resolver o problema utilizando alguma das estratégias mencionadas, devem ser apresentadas justificativas fundamentadas com base em referências bibliográficas.
+## 🚀 Como Executar
 
-## O que deve ser entregue
+[Instruções de execução serão adicionadas conforme as implementações forem desenvolvidas]
 
-- **Códigos-fonte dos programas** em Java, Python, C ou C++ (bem identado e comentado)
-- **Documentação do trabalho**
+## 📊 Análise de Complexidade
 
-## Estrutura da Documentação
+[Análise de complexidade temporal e espacial será documentada aqui]
 
-A documentação deve conter:
+## 📈 Resultados
 
-1. **Identificação dos autores do trabalho** (nomes completos em ordem alfabética seguidos do núm. de matrícula)
+[Resultados comparativos das diferentes estratégias serão apresentados aqui]
 
-2. **Introdução:** Descrição do problema a ser resolvido pelo grupo de trabalho
+## 📚 Referências
 
-3. **Prova:** Provar que o problema pertence à classe NP
+- T.H. Cormen, C.E. Leiserson, R.L. Rivest, and C. Stein. *Introduction to Algorithms.* The MIT Press/McGraw-Hill, 3rd edition, 2009.
+- N. Ziviani. *Projeto de Algoritmos com implementações em Java e C++.* Cengage Learning (Thomson/Pioneira), São Paulo, 1st edition, 2006.
 
-4. **Implementação:** Descrição sobre as implementações. **Muito importante:** os códigos utilizados nas implementações devem ser inseridos na documentação
+## 👥 Autores
 
-5. **Análise de Complexidade:** Estudo da complexidade de tempo e espaço das funções implementadas
+[Adicionar nomes completos e números de matrícula dos integrantes do grupo]
 
-6. **Análise de Resultados:** Comparar os dados obtidos e discorrer sobre eles
+## 📅 Prazos
 
-7. **Conclusão:** Comentários gerais sobre o trabalho e as principais dificuldades encontradas em sua implementação
+- **Entrega do trabalho escrito:** 22/11/2025
+- **Apresentação oral:** 24/11 ou 1/12/2025
 
-8. **Bibliografia:** Bibliografia utilizada para o desenvolvimento do trabalho, incluindo sítio da Internet se for o caso. Uma referência bibliográfica deve ser citada no texto onde é utilizada
+## 📝 Notas
 
-## Formato Final
+Para mais detalhes sobre os requisitos do trabalho, consulte o arquivo [REQUISITOS.md](./REQUISITOS.md).
 
-**PDF**
-
-## Como deve ser feita a entrega
-
-A entrega **DEVE** ser feita pela plataforma SIGAA, na forma de um único arquivo zipado, contendo o código-fonte, arquivos diversos e a documentação. Não serão aceitas entregas por e-mail.
-
-O nome do arquivo zipado deverá ser o primeiro e último nome de um dos integrantes do grupo. Por exemplo: `LIBNA_COSTA.ZIP`
-
-## Observações Gerais
-
-1. Comece a elaborar o trabalho logo, enquanto o prazo para terminá-lo ainda está distante.
-
-2. O item mais importante e relevante na nota será a profundidade da apresentação e a discussão a respeito da aplicação prática do problema.
-
-3. Todos os integrantes dos grupos devem estar presentes durante as apresentações orais dos trabalhos.
-
-4. Trabalhos e códigos-fontes copiados de outros grupos terão nota zero. Devido a recorrentes problemas com cópias de trabalhos (plágios), os autores de trabalhos copiados também terão notas zero.
-
-5. **Cálculo da nota:** (Nota Trabalho Escrito + Nota Apresentação Oral) / 2
-
-6. Trabalhos escritos entregues com atraso terão descontados 0,1 (zero vírgula um) ponto por hora de atraso.
-
-7. Apresentação oral não realizada na data receberá nota 0,0 (zero vírgula zero).
-
-8. Sugiro que apenas um ou dois membros do grupo façam a apresentação, devendo ser escolhido(s) aquele(a)s com mais aptidão para tal mister.
-
-9. Evite discussões inócuas com o professor na tentativa de postergar a data de entrega do referido trabalho, pois não há tempo no calendário acadêmico para adiamentos.
-
-## Referências
-
-[1] T.H. Cormen, C.E. Leiserson, R.L. Rivest, and C. Stein. *Introduction to Algorithms.* The MIT Press/McGraw-Hill, 3rd edition, 2009.
-
-[2] N. Ziviani. *Projeto de Algoritmos com implementações em Java e C++.* Cengage Learning (Thomson/Pioneira), São Paulo, 1st edition, 2006.
-
+Para informações sobre a divisão de tarefas e plano de ação, consulte o arquivo [PLANO_DE_ACAO.md](./PLANO_DE_ACAO.md).
