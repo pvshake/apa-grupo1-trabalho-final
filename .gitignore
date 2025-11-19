@@ -80,3 +80,26 @@ test_data/
 *.txt
 !requirements.txt
 
+# Resultados e análises
+results/
+*.png
+*.jpg
+*.pdf
+!docs/documentacao.pdf
+
+# Ambiente virtual Python
+venv/
+env/
+ENV/
+.venv
+
+# Coverage reports
+.coverage
+htmlcov/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+

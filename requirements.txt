@@ -1,0 +1,21 @@
+# Dependências do projeto
+# Python 3.8+ é necessário
+
+# ============================================
+# DEPENDÊNCIAS OBRIGATÓRIAS (para executar testes)
+# ============================================
+pytest>=7.4.0
+
+# ============================================
+# DEPENDÊNCIAS OPCIONAIS
+# ============================================
+# Para cobertura de código (opcional)
+pytest-cov>=4.1.0
+
+# Para análise de performance (opcional)
+memory-profiler>=0.61.0
+
+# Para formatação de código (opcional, mas recomendado)
+black>=23.7.0
+flake8>=6.1.0
+
