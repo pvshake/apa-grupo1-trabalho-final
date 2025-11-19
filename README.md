@@ -187,25 +187,35 @@ Para mais exemplos e detalhes, consulte a documentação específica de cada imp
 
 ## 📊 Análise de Complexidade
 
-[Análise de complexidade temporal e espacial será documentada aqui]
+As deduções formais de tempo/espaço de cada algoritmo (incluindo demonstrações e justificativas) estão reunidas em:
+- [docs/ANALISE_DESEMPENHO.md](./docs/ANALISE_DESEMPENHO.md) — seção “Interpretação por Estratégia” com foco em ordem assintótica e trade-offs.
+- Documentação específica de cada implementação em `docs/implementations/`, que descreve a complexidade individual e o racional escolhido.
 
 ## 📈 Resultados
 
-[Resultados comparativos das diferentes estratégias serão apresentados aqui]
+Os resultados experimentais completos (tempos médios, contagens de instruções e ranking) podem ser verificados em:
+- `results/performance_summary.json` — dados brutos para consumo em ferramentas.
+- `results/performance_summary.md` — tabela resumida pronta para leitura rápida.
+- [docs/ANALISE_DESEMPENHO.md](./docs/ANALISE_DESEMPENHO.md) — análise textual, conclusões e recomendações sobre a melhor/pior abordagem.
 
 ## 📚 Referências
 
 - T.H. Cormen, C.E. Leiserson, R.L. Rivest, and C. Stein. *Introduction to Algorithms.* The MIT Press/McGraw-Hill, 3rd edition, 2009.
 - N. Ziviani. *Projeto de Algoritmos com implementações em Java e C++.* Cengage Learning (Thomson/Pioneira), São Paulo, 1st edition, 2006.
+- W. F. McKinney. *Python for Data Analysis.* O’Reilly Media, 2nd edition, 2017. (Consultado para práticas de medição e análise de resultados.)
+- Documentação oficial do `pytest`: <https://docs.pytest.org/en/latest/>
+- Documentação do `pytest-xdist`: <https://pytest-xdist.readthedocs.io/en/latest/>
 
 ## 👥 Autores
 
-[Adicionar nomes completos e números de matrícula dos integrantes do grupo]
+[Bruno Evangelista Bertoldo - 202304388]
+[Cesar Caus Portilho - 202304391]
+[Pedro Vitor Silveira Fajardo - 201907495]
 
 ## 📅 Prazos
 
 - **Entrega do trabalho escrito:** 22/11/2025
-- **Apresentação oral:** 24/11 ou 1/12/2025
+- **Apresentação oral:** 24/11
 
 ## 📝 Documentação Adicional
 
