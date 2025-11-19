@@ -25,14 +25,14 @@
 - [x] Implementar **Programação Dinâmica** (Dynamic Programming)
 - [x] Implementar **Algoritmos Gulosos** (Greedy Algorithms)
 - [x] Implementar **Algoritmos Aproximados ou Heurísticas**
-- [ ] Realizar **contagem de instruções** para análise de complexidade (de TODOS os algoritmos: P1 + P2)
-- [ ] Realizar **medição de tempo de execução** para análise de desempenho (de TODOS os algoritmos: P1 + P2)
-- [ ] Coletar dados de performance para comparação entre todas as estratégias
+- [x] Realizar **contagem de instruções** para análise de complexidade (de TODOS os algoritmos: P1 + P2)
+- [x] Realizar **medição de tempo de execução** para análise de desempenho (de TODOS os algoritmos: P1 + P2)
+- [x] Coletar dados de performance para comparação entre todas as estratégias
 
 **Entregáveis:**
 - Códigos-fonte funcionais das 3 estratégias acima
-- Scripts/tools para medição de complexidade e tempo (aplicáveis a todos os algoritmos)
-- Dados coletados de execução de TODOS os algoritmos (P1 + P2)
+- Scripts/tools para medição de complexidade e tempo (aplicáveis a todos os algoritmos) — `scripts/collect_performance.py`
+- Dados coletados de execução de TODOS os algoritmos (P1 + P2) — `results/performance_summary.json`, `results/performance_summary.md` e `docs/ANALISE_DESEMPENHO.md`
 
 ---
 

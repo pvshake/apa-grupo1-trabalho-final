@@ -110,7 +110,13 @@ python3 -m pytest tests/ -v
 python3 -m pytest tests/ -v -s
 ```
 
-**3. Execute o programa principal:**
+**3. Executar todos os testes com um único comando:**
+```bash
+./scripts/run_all_tests.sh            # execução sequencial
+./scripts/run_all_tests.sh --parallel # requer pytest-xdist
+```
+
+**4. Execute o programa principal:**
 ```bash
 python3 main.py
 ```
@@ -124,6 +130,32 @@ Para instruções específicas de cada algoritmo implementado, consulte:
 - **Programação Dinâmica:** [docs/implementations/DYNAMIC_PROGRAMMING.md](./docs/implementations/DYNAMIC_PROGRAMMING.md)
 - **Algoritmos Gulosos:** [docs/implementations/GREEDY.md](./docs/implementations/GREEDY.md)
 - **Heurísticas:** [docs/implementations/HEURISTICS.md](./docs/implementations/HEURISTICS.md)
+
+## 📊 Coleta de Desempenho
+
+Para gerar as métricas (tempo médio, contagem de instruções e ranking):
+
+```bash
+python3 scripts/collect_performance.py
+```
+
+Os resultados ficam disponíveis em:
+- `results/performance_summary.json`
+- `results/performance_summary.md`
+- [docs/ANALISE_DESEMPENHO.md](./docs/ANALISE_DESEMPENHO.md) — interpretação completa dos dados
+
+## 📈 Resumo dos Resultados
+
+| Algoritmo | Complexidade | Tempo Médio (ms) | Instruções Médias |
+|-----------|--------------|------------------|-------------------|
+| Heurístico / Aproximação | ≈O(n) | 0.008 | 35 |
+| Programação Dinâmica | O(n) | 0.010 | 67 |
+| Algoritmo Guloso | O(n) | 0.010 | 51 |
+| Divisão e Conquista | O(n log n) | 0.055 | 206 |
+| Backtracking | O(n²) | 0.080 | 384 |
+| Força Bruta | O(n³) | 0.697 | 33 921 |
+
+> Fonte: `python3 scripts/collect_performance.py`. Veja detalhes e análise qualitativa em [docs/ANALISE_DESEMPENHO.md](./docs/ANALISE_DESEMPENHO.md).
 
 ### Exemplo de Uso
 
@@ -185,6 +217,7 @@ Para mais exemplos e detalhes, consulte a documentação específica de cada imp
 - **Documentação da implementação Programação Dinâmica:** [docs/implementations/DYNAMIC_PROGRAMMING.md](./docs/implementations/DYNAMIC_PROGRAMMING.md)
 - **Documentação da implementação Algoritmo Guloso:** [docs/implementations/GREEDY.md](./docs/implementations/GREEDY.md)
 - **Documentação da implementação Heurísticas:** [docs/implementations/HEURISTICS.md](./docs/implementations/HEURISTICS.md)
+- **Análise consolidada de desempenho:** [docs/ANALISE_DESEMPENHO.md](./docs/ANALISE_DESEMPENHO.md)
 
 ## ❓ Solução de Problemas
 

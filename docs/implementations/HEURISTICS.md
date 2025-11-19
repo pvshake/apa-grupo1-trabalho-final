@@ -69,6 +69,18 @@ pip3 install pytest-cov
 python3 -m pytest --cov=src/heuristics --cov-report=html
 ```
 
+**Extra — Executar toda a suíte do projeto:**
+```bash
+./scripts/run_all_tests.sh            # sequencial
+./scripts/run_all_tests.sh --parallel # requer pytest-xdist
+```
+
+**Extra — Gerar relatório comparativo de desempenho:**
+```bash
+python3 scripts/collect_performance.py
+```
+Consulte `results/performance_summary.md` e [docs/ANALISE_DESEMPENHO.md](../ANALISE_DESEMPENHO.md).
+
 ### Saída Esperada
 
 ```

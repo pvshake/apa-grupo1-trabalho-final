@@ -81,7 +81,7 @@ test_data/
 !requirements.txt
 
 # Resultados e análises
-results/
+# (manter pastas com métricas versionadas)
 *.png
 *.jpg
 *.pdf

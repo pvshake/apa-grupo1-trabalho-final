@@ -15,6 +15,9 @@ pytest-cov>=4.1.0
 # Para análise de performance (opcional)
 memory-profiler>=0.61.0
 
+# Para execução paralela dos testes (opcional)
+pytest-xdist>=3.5.0
+
 # Para formatação de código (opcional, mas recomendado)
 black>=23.7.0
 flake8>=6.1.0

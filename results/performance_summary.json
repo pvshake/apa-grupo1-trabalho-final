@@ -1,0 +1,710 @@
+{
+  "Força Bruta (Brute Force)": {
+    "cases": [
+      {
+        "input_preview": "",
+        "input_length": 0,
+        "expected_length": 0,
+        "output_length": 0,
+        "substring": "",
+        "execution_time": 0.0,
+        "instruction_count": null,
+        "passed": true
+      },
+      {
+        "input_preview": "a",
+        "input_length": 1,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 4e-06,
+        "instruction_count": 9,
+        "passed": true
+      },
+      {
+        "input_preview": "aa",
+        "input_length": 2,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 6e-06,
+        "instruction_count": 21,
+        "passed": true
+      },
+      {
+        "input_preview": "ab",
+        "input_length": 2,
+        "expected_length": 2,
+        "output_length": 2,
+        "substring": "ab",
+        "execution_time": 5e-06,
+        "instruction_count": 24,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcbb",
+        "input_length": 8,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 4.4e-05,
+        "instruction_count": 345,
+        "passed": true
+      },
+      {
+        "input_preview": "bbbbb",
+        "input_length": 5,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "b",
+        "execution_time": 1.7e-05,
+        "instruction_count": 113,
+        "passed": true
+      },
+      {
+        "input_preview": "pwwkew",
+        "input_length": 6,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "wke",
+        "execution_time": 2.6e-05,
+        "instruction_count": 179,
+        "passed": true
+      },
+      {
+        "input_preview": "dvdf",
+        "input_length": 4,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "vdf",
+        "execution_time": 1.3e-05,
+        "instruction_count": 79,
+        "passed": true
+      },
+      {
+        "input_preview": "abcdefghijklmnopqrstuvwxyz",
+        "input_length": 26,
+        "expected_length": 26,
+        "output_length": 26,
+        "substring": "abcdefghijklmnopqrstuvwxyz",
+        "execution_time": 0.000504,
+        "instruction_count": 7684,
+        "passed": true
+      },
+      {
+        "input_preview": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...",
+        "input_length": 100,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 0.006511,
+        "instruction_count": 353703,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcabcabcabcabcabcabcabcabc",
+        "input_length": 30,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 0.000481,
+        "instruction_count": 10974,
+        "passed": true
+      }
+    ],
+    "average_time": 0.000692,
+    "average_instructions": 33921,
+    "max_length_observed": 26,
+    "all_passed": true
+  },
+  "Backtracking": {
+    "cases": [
+      {
+        "input_preview": "",
+        "input_length": 0,
+        "expected_length": 0,
+        "output_length": 0,
+        "substring": "",
+        "execution_time": 0.0,
+        "instruction_count": null,
+        "passed": true
+      },
+      {
+        "input_preview": "a",
+        "input_length": 1,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 6e-06,
+        "instruction_count": 10,
+        "passed": true
+      },
+      {
+        "input_preview": "aa",
+        "input_length": 2,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 5e-06,
+        "instruction_count": 20,
+        "passed": true
+      },
+      {
+        "input_preview": "ab",
+        "input_length": 2,
+        "expected_length": 2,
+        "output_length": 2,
+        "substring": "ab",
+        "execution_time": 6e-06,
+        "instruction_count": 25,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcbb",
+        "input_length": 8,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 3e-05,
+        "instruction_count": 142,
+        "passed": true
+      },
+      {
+        "input_preview": "bbbbb",
+        "input_length": 5,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "b",
+        "execution_time": 1.1e-05,
+        "instruction_count": 50,
+        "passed": true
+      },
+      {
+        "input_preview": "pwwkew",
+        "input_length": 6,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "wke",
+        "execution_time": 2e-05,
+        "instruction_count": 94,
+        "passed": true
+      },
+      {
+        "input_preview": "dvdf",
+        "input_length": 4,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "vdf",
+        "execution_time": 1.3e-05,
+        "instruction_count": 62,
+        "passed": true
+      },
+      {
+        "input_preview": "abcdefghijklmnopqrstuvwxyz",
+        "input_length": 26,
+        "expected_length": 26,
+        "output_length": 26,
+        "substring": "abcdefghijklmnopqrstuvwxyz",
+        "execution_time": 0.000455,
+        "instruction_count": 2185,
+        "passed": true
+      },
+      {
+        "input_preview": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...",
+        "input_length": 100,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 0.000209,
+        "instruction_count": 1000,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcabcabcabcabcabcabcabcabc",
+        "input_length": 30,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 0.000131,
+        "instruction_count": 640,
+        "passed": true
+      }
+    ],
+    "average_time": 8.1e-05,
+    "average_instructions": 384,
+    "max_length_observed": 26,
+    "all_passed": true
+  },
+  "Divisão e Conquista (Divide and Conquer)": {
+    "cases": [
+      {
+        "input_preview": "",
+        "input_length": 0,
+        "expected_length": 0,
+        "output_length": 0,
+        "substring": "",
+        "execution_time": 0.0,
+        "instruction_count": null,
+        "passed": true
+      },
+      {
+        "input_preview": "a",
+        "input_length": 1,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 1e-06,
+        "instruction_count": 2,
+        "passed": true
+      },
+      {
+        "input_preview": "aa",
+        "input_length": 2,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 5e-06,
+        "instruction_count": 11,
+        "passed": true
+      },
+      {
+        "input_preview": "ab",
+        "input_length": 2,
+        "expected_length": 2,
+        "output_length": 2,
+        "substring": "ab",
+        "execution_time": 4e-06,
+        "instruction_count": 11,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcbb",
+        "input_length": 8,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 2.7e-05,
+        "instruction_count": 79,
+        "passed": true
+      },
+      {
+        "input_preview": "bbbbb",
+        "input_length": 5,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "b",
+        "execution_time": 1.1e-05,
+        "instruction_count": 40,
+        "passed": true
+      },
+      {
+        "input_preview": "pwwkew",
+        "input_length": 6,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "kew",
+        "execution_time": 1.6e-05,
+        "instruction_count": 58,
+        "passed": true
+      },
+      {
+        "input_preview": "dvdf",
+        "input_length": 4,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "vdf",
+        "execution_time": 9e-06,
+        "instruction_count": 32,
+        "passed": true
+      },
+      {
+        "input_preview": "abcdefghijklmnopqrstuvwxyz",
+        "input_length": 26,
+        "expected_length": 26,
+        "output_length": 26,
+        "substring": "abcdefghijklmnopqrstuvwxyz",
+        "execution_time": 9.8e-05,
+        "instruction_count": 343,
+        "passed": true
+      },
+      {
+        "input_preview": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...",
+        "input_length": 100,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 0.000331,
+        "instruction_count": 1327,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcabcabcabcabcabcabcabcabc",
+        "input_length": 30,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 0.000102,
+        "instruction_count": 371,
+        "passed": true
+      }
+    ],
+    "average_time": 5.5e-05,
+    "average_instructions": 206,
+    "max_length_observed": 26,
+    "all_passed": true
+  },
+  "Programação Dinâmica (Dynamic Programming)": {
+    "cases": [
+      {
+        "input_preview": "",
+        "input_length": 0,
+        "expected_length": 0,
+        "output_length": 0,
+        "substring": "",
+        "execution_time": 0.0,
+        "instruction_count": null,
+        "passed": true
+      },
+      {
+        "input_preview": "a",
+        "input_length": 1,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 2e-06,
+        "instruction_count": 5,
+        "passed": true
+      },
+      {
+        "input_preview": "aa",
+        "input_length": 2,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 2e-06,
+        "instruction_count": 9,
+        "passed": true
+      },
+      {
+        "input_preview": "ab",
+        "input_length": 2,
+        "expected_length": 2,
+        "output_length": 2,
+        "substring": "ab",
+        "execution_time": 2e-06,
+        "instruction_count": 9,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcbb",
+        "input_length": 8,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 6e-06,
+        "instruction_count": 33,
+        "passed": true
+      },
+      {
+        "input_preview": "bbbbb",
+        "input_length": 5,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "b",
+        "execution_time": 3e-06,
+        "instruction_count": 21,
+        "passed": true
+      },
+      {
+        "input_preview": "pwwkew",
+        "input_length": 6,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "wke",
+        "execution_time": 4e-06,
+        "instruction_count": 24,
+        "passed": true
+      },
+      {
+        "input_preview": "dvdf",
+        "input_length": 4,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "vdf",
+        "execution_time": 3e-06,
+        "instruction_count": 17,
+        "passed": true
+      },
+      {
+        "input_preview": "abcdefghijklmnopqrstuvwxyz",
+        "input_length": 26,
+        "expected_length": 26,
+        "output_length": 26,
+        "substring": "abcdefghijklmnopqrstuvwxyz",
+        "execution_time": 1.7e-05,
+        "instruction_count": 105,
+        "passed": true
+      },
+      {
+        "input_preview": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...",
+        "input_length": 100,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 5.3e-05,
+        "instruction_count": 401,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcabcabcabcabcabcabcabcabc",
+        "input_length": 30,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 1.7e-05,
+        "instruction_count": 121,
+        "passed": true
+      }
+    ],
+    "average_time": 1e-05,
+    "average_instructions": 67,
+    "max_length_observed": 26,
+    "all_passed": true
+  },
+  "Algoritmo Guloso (Greedy)": {
+    "cases": [
+      {
+        "input_preview": "",
+        "input_length": 0,
+        "expected_length": 0,
+        "output_length": 0,
+        "substring": "",
+        "execution_time": 0.0,
+        "instruction_count": null,
+        "passed": true
+      },
+      {
+        "input_preview": "a",
+        "input_length": 1,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 2e-06,
+        "instruction_count": 4,
+        "passed": true
+      },
+      {
+        "input_preview": "aa",
+        "input_length": 2,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 2e-06,
+        "instruction_count": 7,
+        "passed": true
+      },
+      {
+        "input_preview": "ab",
+        "input_length": 2,
+        "expected_length": 2,
+        "output_length": 2,
+        "substring": "ab",
+        "execution_time": 2e-06,
+        "instruction_count": 7,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcbb",
+        "input_length": 8,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 6e-06,
+        "instruction_count": 27,
+        "passed": true
+      },
+      {
+        "input_preview": "bbbbb",
+        "input_length": 5,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "b",
+        "execution_time": 4e-06,
+        "instruction_count": 16,
+        "passed": true
+      },
+      {
+        "input_preview": "pwwkew",
+        "input_length": 6,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "wke",
+        "execution_time": 5e-06,
+        "instruction_count": 19,
+        "passed": true
+      },
+      {
+        "input_preview": "dvdf",
+        "input_length": 4,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "vdf",
+        "execution_time": 2e-06,
+        "instruction_count": 13,
+        "passed": true
+      },
+      {
+        "input_preview": "abcdefghijklmnopqrstuvwxyz",
+        "input_length": 26,
+        "expected_length": 26,
+        "output_length": 26,
+        "substring": "abcdefghijklmnopqrstuvwxyz",
+        "execution_time": 1.3e-05,
+        "instruction_count": 79,
+        "passed": true
+      },
+      {
+        "input_preview": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...",
+        "input_length": 100,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 6e-05,
+        "instruction_count": 301,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcabcabcabcabcabcabcabcabc",
+        "input_length": 30,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 1.9e-05,
+        "instruction_count": 91,
+        "passed": true
+      }
+    ],
+    "average_time": 1e-05,
+    "average_instructions": 51,
+    "max_length_observed": 26,
+    "all_passed": true
+  },
+  "Heurístico / Aproximação": {
+    "cases": [
+      {
+        "input_preview": "",
+        "input_length": 0,
+        "expected_length": 0,
+        "output_length": 0,
+        "substring": "",
+        "execution_time": 0.0,
+        "instruction_count": null,
+        "passed": true
+      },
+      {
+        "input_preview": "a",
+        "input_length": 1,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 1e-06,
+        "instruction_count": 4,
+        "passed": true
+      },
+      {
+        "input_preview": "aa",
+        "input_length": 2,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 1e-06,
+        "instruction_count": 6,
+        "passed": true
+      },
+      {
+        "input_preview": "ab",
+        "input_length": 2,
+        "expected_length": 2,
+        "output_length": 2,
+        "substring": "ab",
+        "execution_time": 1e-06,
+        "instruction_count": 6,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcbb",
+        "input_length": 8,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 4e-06,
+        "instruction_count": 16,
+        "passed": true
+      },
+      {
+        "input_preview": "bbbbb",
+        "input_length": 5,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "b",
+        "execution_time": 3e-06,
+        "instruction_count": 12,
+        "passed": true
+      },
+      {
+        "input_preview": "pwwkew",
+        "input_length": 6,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "wke",
+        "execution_time": 3e-06,
+        "instruction_count": 13,
+        "passed": true
+      },
+      {
+        "input_preview": "dvdf",
+        "input_length": 4,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "vdf",
+        "execution_time": 3e-06,
+        "instruction_count": 10,
+        "passed": true
+      },
+      {
+        "input_preview": "abcdefghijklmnopqrstuvwxyz",
+        "input_length": 26,
+        "expected_length": 26,
+        "output_length": 26,
+        "substring": "abcdefghijklmnopqrstuvwxyz",
+        "execution_time": 1.3e-05,
+        "instruction_count": 54,
+        "passed": true
+      },
+      {
+        "input_preview": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa...",
+        "input_length": 100,
+        "expected_length": 1,
+        "output_length": 1,
+        "substring": "a",
+        "execution_time": 4.7e-05,
+        "instruction_count": 202,
+        "passed": true
+      },
+      {
+        "input_preview": "abcabcabcabcabcabcabcabcabcabc",
+        "input_length": 30,
+        "expected_length": 3,
+        "output_length": 3,
+        "substring": "abc",
+        "execution_time": 1.5e-05,
+        "instruction_count": 62,
+        "passed": true
+      }
+    ],
+    "average_time": 8e-06,
+    "average_instructions": 35,
+    "max_length_observed": 26,
+    "all_passed": true
+  }
+}
